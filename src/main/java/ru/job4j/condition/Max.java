@@ -3,9 +3,7 @@ package ru.job4j.condition;
 public class Max {
     public static int max(int left, int right) {
         boolean ab = left > right;
-        int result = ab ? left : right;
-        return result;
-
+        return ab ? left : right;
     }
 
     public static void main(String[] args) {
