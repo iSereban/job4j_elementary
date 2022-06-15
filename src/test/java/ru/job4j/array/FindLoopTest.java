@@ -32,8 +32,9 @@ public class FindLoopTest {
         int expected = 3;
         Assert.assertEquals(expected, result);
     }
+
     @Test
-    public void whenDiapasonHasNot8ThenMinus1 () {
+    public void whenDiapasonHasNot8ThenMinus1() {
         int[] data = new int[]{5, 2, 10, 2, 4};
         int el = 1;
         int start = 2;
