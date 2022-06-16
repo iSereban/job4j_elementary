@@ -30,4 +30,26 @@ public class MatrixCheck {
         }
         return rsl;
     }
+
+    public static boolean isWin(char[][] board) {
+        boolean result = false;
+        for (int row = 0; row < board.length; row++) {
+            boolean resultrow = true;
+            boolean resultcell = true;
+            for (int cell = 0; cell < board.length; cell++) {
+                if (board[row][cell] != 'X') {
+                    resultrow = false;
+                }
+                if (board[cell][row] != 'X') {
+                    resultcell = false;
+                }
+            }
+            if (resultrow || resultcell) {
+                row = board.length;
+                result = true;
+                break;
+            }
+        }
+        return result;
+    }
 }
