@@ -5,7 +5,9 @@ public class Defragment {
         String[] result = new String[array.length];
         int i = 0;
         for (String value : array) {
-            if (value != null) result[i++] = value;
+            if (value != null) {
+                result[i++] = value;
+            }
         }
         return result;
     }
