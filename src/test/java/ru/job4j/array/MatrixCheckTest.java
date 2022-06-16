@@ -63,6 +63,7 @@ public class MatrixCheckTest {
         char[] expected = {'X', 'Y', 'Z'};
         Assert.assertArrayEquals(expected, result);
     }
+
     @Test
     public void whenDataMonoByTrueThenTrue() {
         char[][] input = {
